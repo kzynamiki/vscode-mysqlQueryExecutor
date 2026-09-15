@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "sql: Execute query from line",
+      "type": "shell",
+      "command": "${workspaceFolder}/.vscode/run_sql.cmd",
+      "args": [
+        "${file}",
+        "${lineNumber}"
+      ],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "new",
+        "close": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
